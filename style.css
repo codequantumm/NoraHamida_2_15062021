@@ -25,12 +25,11 @@ body
      float: right;
  }
  
-}
 #logo
 {
     flex-direction: row;
     align-items: baseline;
-    margin-right: auto;
+    margin-right: 15px;
 }
 .link_3 
 {
@@ -72,4 +71,9 @@ h1
     margin: 0;
     padding: 0;
     text-align: left;
+}
+.block_search {
+    display: flex;
+    flex-direction: row;
+    position: relative;
 }
