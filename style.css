@@ -32,12 +32,11 @@ body
      display: flex;
      float: right;
  }
-
 #logo
 {
     flex-direction: row;
     align-items: baseline;
-    margin-right: auto;
+    margin-right: 15px;
 }
 .link_3 
 {
