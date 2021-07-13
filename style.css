@@ -290,8 +290,6 @@ aside
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-bottom: 60px;
-    max-width: 1350px;
 }
 
 .titre_activites {
