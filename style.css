@@ -354,4 +354,18 @@ margin: 15px;
 
 /******** Footer **********/
 
+footer {
+    padding: 40px;
+    background-color: #F2F2F2;
+}
 
+.a_propos, .nos_hebergements, .assistance {
+    flex-direction: column;
+    text-decoration: none;
+}
+.pied {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
