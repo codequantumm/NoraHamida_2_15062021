@@ -8,6 +8,8 @@ body
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-style: normal;
     color: black;
+    margin:0;
+    padding: 0;
 }
 .wrapper {
     width: 100%;
@@ -24,12 +26,14 @@ body
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
  }
 
  .menu_nav 
  {
      display: flex;
      float: right;
+     width: 176px;
  }
 
 #logo
@@ -38,7 +42,7 @@ body
     align-items: baseline;
     margin-right: 15px;
 }
-.link_3 
+li .link_3 
 {
     color: #0065fc;
     font-weight: bold;
@@ -65,9 +69,9 @@ a {
     text-decoration: none;
 }
 
-header ul li a:hover {
+header li a:hover {
     border-top: 2px solid #0065fc;
-    padding-top: 40px;
+    padding-top: 32px;
     color: #0065fc;
   }
   
@@ -124,14 +128,14 @@ h1
   }
 .filters div{
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 25px;
     border-radius: 37px;
     white-space: nowrap;
     border: 1px solid #F2F2F2;
-    padding-right: 20px;
+    padding-right: 25px;
     cursor:pointer;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 19px;
     opacity: 1;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
@@ -147,11 +151,16 @@ h1
     justify-content: center;
     text-align: center;
     line-height: 40px;
-    margin-right: 10px;
+    margin-right: 20px;
  }
 .filtres p {
     margin: 0 15px 0 0;
-    line-height: 40px;
+    line-height: 45px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.filters {
+    margin-left: 20px;
 }
  .info{
      display: flex;
@@ -171,7 +180,7 @@ h1
 .info p {
     padding-left: 10px;
     display: inline-block;
-    font-size: smaller;
+    
 }
 .filters div:hover {
     opacity: .5;
@@ -181,15 +190,12 @@ h1
  .hotel-wrapper{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 25px 0 25px;
+    margin: 0 25px 25px 25px;
  }
- 
 
 .h {
     
     background-color: #F2F2F2;
-    width: 62%;
-    margin-right: 3%;
     border-radius: 15px;
 
 }
@@ -213,7 +219,9 @@ h1
 }
 
 .hebergement .wrapper{
-    display: flex;
+    display: grid;
+    grid-template-columns: 71% 37%;
+    grid-column-gap: 40px;
 }
 
 .h h2 {
@@ -231,7 +239,7 @@ h1
 }
 .bottom {
     margin: -13px 0 3px 3px;
-    font-size: small;
+    
 }
 /***** Système de notation *****/
 
@@ -247,7 +255,6 @@ h1
 
 aside
 {
-    flex: 1.2;
     position: relative;
     background-color: #fffefe;
     border-radius: 5px;
@@ -264,7 +271,6 @@ aside h2 {
 #populaires {
     background-color: #f2f2f2;
     border-radius: 15px;
-    width: 32%;
     
 }
 
@@ -281,7 +287,7 @@ aside h2 {
     padding: 5px;
     box-sizing: border-box;
     margin: 0px 0px 20px 0px;
-    height: 145px;
+    height: 170px;
     box-shadow: 0 5px 16px #0000002b;
     margin-bottom: 10%;
 
@@ -321,50 +327,44 @@ aside h2 {
 #Activités { 
   background-color: white;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   margin-bottom: 60px;
 
 }
 
-.titre_activites {
-    margin-bottom: 27px;
-    font-size: large;
-}
 .activity {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-column-gap: 50px;
     }
+
 .a1, .a2, .a3, .a4, .a5, .a6{
     box-shadow: 0 0 20px #0000002b;
     border-radius: 20px;
-    margin: 0px 0px 20px 0px;
 }
 .a1 img, .a4 img{
-    width: 278px;
-    height: 375px;
+    width: 334px;
+    height: 395px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 .a2 img {
-    width: 268px;
+    width: 335px;
     height: 167px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 .a3 img {
-    width: 268px;
+    width: 335px;
     height: 126px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 .a5 img, .a6 img {
-    width: 340px;
+    width: 335px;
     height: 151px;
     object-fit: cover;
     border-top-left-radius: 15px;
@@ -374,8 +374,8 @@ aside h2 {
     margin: 15px;
 }
 .a2_a3, .a5_a6 {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-row-gap: 50px;
 }
 
 /******** Footer **********/
