@@ -18,6 +18,9 @@ body
     margin-bottom: 23px;
 }
 
+p {
+    font-size: 18px;
+}
  /* Navigation*/
 
  #header .wrapper {
@@ -29,6 +32,12 @@ body
     margin-top: 20px;
  }
 
+ .menu nav .suscribe
+ {
+     color: #0065fc;
+     font-weight: bold;
+ 
+ }
  .menu_nav 
  {
      display: flex;
@@ -42,12 +51,7 @@ body
     align-items: baseline;
     margin-right: 15px;
 }
-li .link_3 
-{
-    color: #0065fc;
-    font-weight: bold;
 
-}
 
 nav ul 
 {
@@ -74,6 +78,7 @@ header li a:hover {
     padding-top: 32px;
     color: #0065fc;
   }
+ 
   
 /*Section Recherche*/
 h1
@@ -85,12 +90,13 @@ h1
 
 .search{
     display: flex;
-    height: 40px;
+    height: 49px;
     background: #F2F2F2;
     border-radius: 10px;
     align-items: center;
     float:left;
     margin-bottom: 20px;
+    font-size: medium;
   }
   
   .search i {
@@ -98,10 +104,11 @@ h1
   }
   
   .search input{
-    height: 36px;
+    height: 45px;
     border: none;
-    padding: 0 10px;
+    padding: 0 25px;
     font-weight: bold;
+    font-size: medium;
   }
   
   .search button{
@@ -109,8 +116,8 @@ h1
     color: #f2f2f2;
     font-weight: bold;
     border: none;
-    height: 40px;
-    padding: 0 10px;
+    height: 49px;
+    padding: 0 40px;
     border-radius: 10px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -238,7 +245,9 @@ h1
 
 }
 .bottom {
-    margin: -13px 0 3px 3px;
+    margin: -5px 0 5px 10px;
+    line-height: 5px;
+    font-size: 18px;
     
 }
 /***** Système de notation *****/
@@ -307,10 +316,11 @@ aside h2 {
     cursor:pointer;
 
   }
-  .pop_right h3{
-    font-size: 1.2em;
-    font-weight: 800;
-    margin-bottom: -3%;
+  .pop_right{
+    font-size: 18px;
+    margin-top: -19px;
+    display: grid;
+    grid-template-rows: 32% 62%;
 }
 
   .fa-chart-line {
