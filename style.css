@@ -10,6 +10,8 @@ body
     color: black;
     margin:0;
     padding: 0;
+    font-size: 16px;
+    
 }
 .wrapper {
     width: 100%;
@@ -18,9 +20,6 @@ body
     margin-bottom: 23px;
 }
 
-p {
-    font-size: 18px;
-}
  /* Navigation*/
 
  #header .wrapper {
@@ -32,7 +31,7 @@ p {
     margin-top: 20px;
  }
 
- .menu nav .suscribe
+ .menu_nav .suscribe a
  {
      color: #0065fc;
      font-weight: bold;
@@ -72,7 +71,7 @@ a {
     text-decoration: none;
 }
 
-header li a:hover {
+header li a:hover{
     border-top: 2px solid #0065fc;
     padding-top: 32px;
     color: #0065fc;
@@ -95,7 +94,7 @@ h1
     align-items: center;
     float:left;
     margin-bottom: 20px;
-    font-size: medium;
+    
   }
   
   .search i {
@@ -107,7 +106,8 @@ h1
     border: none;
     padding: 0 10px;
     font-weight: bold;
-    font-size: medium;
+    font-size: 1em;
+    
   }
   
   .search button{
@@ -121,6 +121,7 @@ h1
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     cursor: pointer;
+    font-size: 1em;
   }
 
 /****** Section FILTRES ********/
@@ -141,7 +142,7 @@ h1
     padding-right: 20px;
     cursor:pointer;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 0.93em;
     opacity: 1;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
@@ -248,9 +249,15 @@ h1
 }
 .bottom {
     margin: -5px 0 5px 10px;
-    line-height: 5px;
     
     
+}
+.hotel h3 {
+    margin: 5px auto;
+}
+
+.hotel p {
+    margin: 5px auto;
 }
 /***** Système de notation *****/
 
@@ -320,7 +327,6 @@ aside h2 {
 
   }
   .pop_right{
-    font-size: 17px;
     margin-top: -19px;
     display: grid;
     grid-template-rows: 32% 62%;
