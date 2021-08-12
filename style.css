@@ -190,6 +190,7 @@ h1
     
 }
 .filters div:hover {
+    background-color: #0065fc;
     opacity: .5;
 }
  /**** Section Hebergements ********/
@@ -327,7 +328,7 @@ aside h2 {
 
   }
   .pop_right{
-    margin-top: -19px;
+    margin-top: -12px;
     display: grid;
     grid-template-rows: 32% 62%;
 }
@@ -412,3 +413,12 @@ footer {
     justify-content: space-between;
     flex-direction: row;
 }
+
+/******** Responsive Design I-Phone 8 **********/
+
+@media only screen 
+    and (max-device-width : 480px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) {
+
+    }
