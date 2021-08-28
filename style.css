@@ -3,6 +3,7 @@
     src: url(Raleway-Regular.ttf);
 }
 
+
 body
 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
@@ -10,7 +11,7 @@ body
     color: black;
     margin:0;
     padding: 0;
-    font-size: 16px;
+    font-size: 14px;
     
 }
 .wrapper {
@@ -18,6 +19,8 @@ body
     max-width: 1340px;
     margin: 0 auto;
     margin-bottom: 23px;
+    padding: 0 20px;
+    box-sizing: border-box; 
 }
 
  /* Navigation*/
@@ -71,7 +74,7 @@ a {
     text-decoration: none;
 }
 
-header li a:hover{
+li:hover{
     border-top: 2px solid #0065fc;
     padding-top: 32px;
     color: #0065fc;
@@ -191,7 +194,7 @@ h1
 }
 .filters div:hover {
     background-color: #0065fc;
-    opacity: .5;
+    color: white;
 }
  /**** Section Hebergements ********/
 
@@ -206,7 +209,7 @@ h1
     background-color: #F2F2F2;
     border-radius: 15px;
     margin-right: 36px;
-    width: 70%;
+    width: 75%;
     
 
 }
@@ -223,10 +226,9 @@ h1
      border-radius: 20px;
      padding: 5px;
      box-sizing: border-box;
-     margin: 3%;
-     width: calc(100% / 3 - 4%);
+     margin: 2%;
      box-shadow: #0000002b 0px 0px 8px 0px;
-     width: calc(100% / 3 - 6%);
+     width: calc(100% / 3 - 4%);
 
 }
 
@@ -290,7 +292,7 @@ aside h2 {
 #populaires {
     background-color: #f2f2f2;
     border-radius: 15px;
-    width: 30%;
+    width: 27%;
     
 }
 
@@ -328,9 +330,10 @@ aside h2 {
 
   }
   .pop_right{
-    margin-top: -12px;
+    margin-top: -9px;
     display: grid;
-    grid-template-rows: 32% 62%;
+    grid-template-rows: 37% 70%;
+
 }
 
   .fa-chart-line {
@@ -414,11 +417,97 @@ footer {
     flex-direction: row;
 }
 
-/******** Responsive Design I-Phone 8 **********/
+footer .wrapper{
+    margin-bottom: 0;
+}
 
-@media only screen 
-    and (max-device-width : 480px) 
-    and (device-height : 667px) 
-    and (-webkit-device-pixel-ratio : 2) {
+/******** Responsive Design **********/
+
+@media all and (max-width: 1206px){
+    #populaires {
+        width: 28%; 
+    }
+}
+@media all and (max-width: 1178px){
+    #populaires {
+        width: 29%; 
+    }
+}
+@media all and (max-width: 1153px){
+    body{
+        font-size: 13px; 
+    }
+    .pop_right {
+        grid-template-rows: 37% 85%;
+    }
+}
+@media all and (max-width: 1089px){
+    #populaires {
+        width: 30%;
+    }
+    .hotel {
+        padding: 3px;
+    }
+}
+@media all and (max-width: 1072px){
+    .hebergement .wrapper {
+        flex-direction: column;
 
     }
+    #populaires{
+        width: 100%;
+        order: 1;
+        margin: 0 0 25px; 
+    }
+    .hebergement.hotel {
+        flex-direction: row;
+    }
+    .h {
+        width: 100%; 
+        order: 2; 
+    
+    }
+    .pop-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+.hp1, .hp2, .hp3 {
+    margin: 2%;
+    width: calc(100% / 3 - 4%)
+}
+#populaires, .aside {
+    padding: 0;
+    padding-bottom: 20px;
+}
+}
+@media all and (max-width: 1045px){
+    .activity {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        grid-row-gap: 36px;
+        
+    }
+}
+@media all and (max-width: 927px){
+    .hp1, .hp2, .hp3 {
+        margin: 1%;
+        width: calc(100% / 3 - 2%);
+    }
+        
+    }
+}
+@media all and (max-width: 870px){
+    
+    body{
+        font-size:12px; 
+    
+    }
+.pop_right.stars {
+    margin: 0;
+    padding: 0 0 20px
+}
+.pop_right {
+    grid-template-rows: 39% 68%;
+}
+
+}
