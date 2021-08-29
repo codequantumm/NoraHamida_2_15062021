@@ -53,7 +53,7 @@ body
     margin-right: 15px;
 }
 
-
+ 
 nav ul 
 {
     list-style: none;
@@ -62,11 +62,13 @@ nav ul
 nav li 
 {
     margin-right: 30px;
+
 }
 
-nav u {
+nav ul {
     padding: 0;
     text-decoration: none;
+
 }
 
 a {
@@ -74,12 +76,11 @@ a {
     text-decoration: none;
 }
 
-li:hover{
+header li a:hover {
     border-top: 2px solid #0065fc;
-    padding-top: 32px;
     color: #0065fc;
+    padding-top: 32px;
   }
- 
   
 /*Section Recherche*/
 h1
@@ -138,7 +139,7 @@ h1
   }
 .filters div{
     display: inline-block;
-    margin-right: 20px;
+    margin: 0 10px 20px;
     border-radius: 37px;
     white-space: nowrap;
     border: 1px solid #F2F2F2;
@@ -494,7 +495,7 @@ footer .wrapper{
         width: calc(100% / 3 - 2%);
     }
         
-    }
+    
 }
 @media all and (max-width: 870px){
     
@@ -502,12 +503,174 @@ footer .wrapper{
         font-size:12px; 
     
     }
-.pop_right.stars {
-    margin: 0;
-    padding: 0 0 20px
-}
-.pop_right {
-    grid-template-rows: 39% 68%;
 }
 
+
+@media all and (max-width: 746px){
+    
+    .pop_right {
+        grid-template-rows: 38% 61%;
+    }
+   
+
+}
+@media all and (max-width: 712px){
+    
+    .hp1, .hp2, .hp3 {
+        height: 120px;
+
+    }
+    .hp1 img, .hp2 img, .hp3 img {
+        width: 40%;
+        height: 98%;
+    }
+    body {
+        font-size: 11px;
+    }
+}
+
+@media all and (max-width: 699px){
+    
+    .pop_right {
+        grid-template-rows: 41% 49%;
+    }
+}
+@media all and (max-width: 642px){
+    
+    body {
+        font-size: 13px;
+    }
+
+    .hp1, .hp2, .hp3 {
+        height: 130px;
+    }
+
+    .hp1, .hp2, .hp3 {
+        margin: 2%;
+        width: calc(100% / 2 - 4%);
+    }
+
+    .hotel {
+        background: white;
+        border-radius: 20px;
+        padding: 5px;
+        box-sizing: border-box;
+        margin: 2%;
+        box-shadow: #0000002b 0px 0px 8px 0px;
+        width: calc(100% / 2 - 4%);
+    }
+    
+    .pied {
+        padding: 18px;
+    }
+}
+@media all and (max-width: 616px){
+
+    .pied {
+        padding: 18px;
+    }
+}
+@media all and (max-width: 560px){
+
+    .pop_right {
+        grid-template-rows: 23% 85%;
+    }
+
+    .hp1, .hp2, .hp3 {
+        margin: 2%;
+        width: calc(100% / 1 - 4%);
+    }
+}
+@media all and (max-width: 540px){
+
+    .pied {
+            padding: 3px;
+    }
+}
+@media all and (max-width: 522px){
+
+    .activity{
+        grid-template-columns: repeat(1, 100%);
+    }
+    .activity img {
+        height: 167px;
+    }
+}
+
+@media all and (max-width: 508px){
+
+    body {
+        font-size: 12px;
+    }
+
+    .pied {
+        flex-direction: column;
+        width: 100%;
+        padding: 0; 
+}
+}
+@media all and (max-width: 480px){
+
+    li.suscribe {
+        order: 1;
+        width: 100%;
+        text-align: right;
+        padding: 20px 0;
+    }
+    nav li {
+        order: 2;
+        width: 50%;
+        margin:0;
+        text-align: center;
+        border-bottom: 2px solid transparent;
+        padding:20px 0;
+        border-top: none;
+
+    }
+    .menu_nav {
+        
+        flex-wrap: wrap;
+        width: 100%;
+        padding:0;
+        margin-top: -49px;
+    }
+
+        nav{
+            width: 100%;
+        }
+        .menu_nav .suscribe a {
+    
+            width: 50%;
+            text-align: center;
+            display: block;
+            float: right;
+}
+    /********** Je n'arrive pas à enlever la barre du bas sur le suscribe******/
+    li.suscribe {
+        border-bottom: none;
+    }
+header li:hover {
+    border-bottom: 2px solid #0065fc;
+    color: #0065fc;
+}
+header li a:hover {
+    border-top: none;
+}
+.h {
+    background-color: white;
+}
+.hotel {
+    width: calc(100% / 1 - 4%);
+}
+
+}
+#populaires {
+    border-radius: 0;
+}
+aside .wrapper {
+    
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
 }
