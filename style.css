@@ -489,7 +489,15 @@ footer .wrapper{
         width: calc(100% / 2 - 6%);
     }
         
-    
+    .hotel {
+        background: white;
+        border-radius: 20px;
+        padding: 5px;
+        box-sizing: border-box;
+        margin: 2%;
+        box-shadow: #0000002b 0px 0px 8px 0px;
+        width: calc(100% / 2 - 4%);
+    }
 }
 @media all and (max-width: 870px){
     
@@ -518,20 +526,6 @@ footer .wrapper{
         height: 130px;
     }
 
-    .hp1, .hp2, .hp3 {
-        margin: 2%;
-        width: calc(100% / 2 - 4%);
-    }
-
-    .hotel {
-        background: white;
-        border-radius: 20px;
-        padding: 5px;
-        box-sizing: border-box;
-        margin: 2%;
-        box-shadow: #0000002b 0px 0px 8px 0px;
-        width: calc(100% / 2 - 4%);
-    }
     
     .pied {
         padding: 18px;
@@ -552,6 +546,10 @@ footer .wrapper{
     }
 }
 @media all and (max-width: 540px){
+
+    .hotel {
+        width: calc(100% - 4%);
+    }
 
     .pied {
             padding: 3px;
@@ -629,10 +627,6 @@ footer .wrapper{
 
     .h {
         background-color: white;
-    }
-
-    .hotel {
-        width: calc(100% - 4%);
     }
 
 
